@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Схема эвакуации</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container">
+        <h1>Схема эвакуации</h1>
+        <div id="tooltip">AXAXAXAXAXA</div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="456" height="608" viewBox="0 0 120 160">
+            <g xlink:title="Стены">
+                <path d="M113.537 7.52 8.415 7.796v147.208h105.122V99.147h6.192v60.97H.75V.75h118.91v87.67l-6.123.053z" style="fill:#4f4f4f;fill-opacity:1;stroke:#000;stroke-width:1.00000399;stroke-dasharray:none;stroke-opacity:1"/>
+                <path d="M61.827 7.652v2.19h7.519V7.658Z" style="fill:#a0a0a0;fill-opacity:1;stroke:#000;stroke-width:1.00000399;stroke-dasharray:none;stroke-opacity:1"/>
+                <path d="M67.796 72.292 68 87.39l-5.983-.125v-1.562L8.62 85.432l-.062-6.157 53.398-.21-.144-39.129 9.213-.129V72.26z" style="fill:#a0a0a0;fill-opacity:1;stroke:#000;stroke-width:1.00000399;stroke-dasharray:none;stroke-opacity:1"/>
+                <path d="m113.537 39.896-27.578-.183-.1 24.628 3.023.02.083-22.09 24.572.163v44.898l-27.59-.182.055-13.48 2.904.018-.037 10.628 24.872.165z" style="fill:#a0a0a0;fill-opacity:1;stroke:#000;stroke-width:1.00000399;stroke-dasharray:none;stroke-opacity:1"/>
+                <path d="M61.751 97.406h6.045v5.1l6.847.001v3.014l-6.847.092v49.392H61.75z" style="fill:#a0a0a0;fill-opacity:1;stroke:#000;stroke-width:1.00000399;stroke-dasharray:none;stroke-opacity:1"/>
+                <path d="M85.24 105.572v-3.097h28.297v3.092z" style="fill:#a0a0a0;fill-opacity:1;stroke:#000;stroke-width:1.00000399;stroke-dasharray:none;stroke-opacity:1"/>
+                <path d="M115.096 88.459h2.992v10.688h-2.992z" style="fill:#845a1a;fill-opacity:1;stroke:#000;stroke-width:1.00000399;stroke-dasharray:none;stroke-opacity:1"/>
+                <path d="M74.643 103.235H85.24v1.655H74.643z" style="fill:#845a1a;fill-opacity:1;stroke:#000;stroke-width:1.00000399;stroke-dasharray:none;stroke-opacity:1"/>
+                <path d="M86.509 64.345h1.556v9.338h-1.556z" style="fill:#845a1a;fill-opacity:1;stroke:#000;stroke-width:1.00000399;stroke-dasharray:none;stroke-opacity:1"/>
+                <path d="M63.459 87.328h3.099v10.119h-3.099z" style="fill:#845a1a;fill-opacity:1;stroke:#000;stroke-width:1.00000399;stroke-dasharray:none;stroke-opacity:1"/>
+            </g>
+            <g xlink:title="Столы">
+                <path class="table" onclick="clickObj(event)" title="Обеденный стол" d="M58.516 7.759h15.076v20.587H58.516z"/>
+                <path class="table" onclick="clickObj(event)" title="Компьютерный стол в гостиной" d="M8.625 54.714h10.828v18.784H8.625z"/>
+                <path class="table" onclick="clickObj(event)" title="Компьютерный стол в спальне" d="M101.583 136.65h11.695v18.161h-11.695z"/>
+                <path class="table" onclick="clickObj(event)" title="Длинный офисный стол в детской" d="M8.625 102.035h8.811v35.26H8.625z"/>
+            </g>
+
+
+            <g class="bed" onclick="clickObj(event)" title="Кровать в детской №1">
+                <path class="path" d="m 48.002416,110.5978 -3.582375,0 V 93.123204 l 76.230439,0.680003"/>
+                <path d="M48.002 98.014H61.46v25.167H48.002z" style="fill-opacity:1;stroke:#000;stroke-width:.451002;stroke-dasharray:none;stroke-opacity:1"/>
+                <rect width="7.489" height="3.562" x="51.132" y="100.954" ry="1.644" style="fill:none;fill-opacity:1;stroke:#000;stroke-width:.451003;stroke-dasharray:none;stroke-opacity:1"/>
+            </g>
+            <g class="bed" onclick="clickObj(event)" title="Кровать в детской №2">
+                <path class="path" d="M 48.002416,138.7728 H 44.420041 V 93.123204 l 76.230439,0.680003"/>
+                <path d="M48.002 126.205h13.555v25.135H48.002z" style="fill-opacity:1;stroke:#000;stroke-width:.450757;stroke-dasharray:none;stroke-opacity:1"/>
+                <rect width="7.489" height="3.562" x="51.132" y="129.844" ry="1.644" style="fill:none;fill-opacity:1;stroke:#000;stroke-width:.451003;stroke-dasharray:none;stroke-opacity:1"/>
+            </g>
+            <g class="chair">
+                <ellipse cx="22.312" cy="111.625" rx="3.1" ry="3.455" title="dsadsadsadsadsa"/>
+                <path class="path" d="M 25.411916,111.62513 H 38.05735 l 6.362691,-18.501926 76.230439,0.680003"/>
+            </g>
+            <g class="chair">
+                <ellipse cx="22.312" cy="127.253" rx="3.1" ry="3.455"/>
+                <path class="path" d="m 25.411916,127.2533 h 11.914861 l 7.093264,-34.130096 76.230439,0.680003"/>
+            </g>
+            <g class="chair">
+                <ellipse cx="23.991" cy="64.106" rx="3.1" ry="3.455"/>
+                <path class="path" d="m 23.991175,60.651275 -0.0035,-27.842867 30.299226,0 25.178858,0 v 60.520671 l 38.621904,0.474128"/>
+            </g>
+            <g class="chair">
+                <ellipse cx="53.928" cy="12.597" rx="3.1" ry="3.455"/>
+                <path class="path" d="m 50.828386,12.597002 h -6.408345 v 20.080072 l 35.045705,0.131334 10e-7,60.520672 41.184733,0.474127"/>
+            </g>
+            <g class="chair">
+                <ellipse cx="53.928" cy="22.607" rx="3.1" ry="3.455"/>
+                <path class="path" d="m 53.928188,26.061765 -0.0081,6.746643 25.54563,0 10e-7,60.520672 41.184733,0.474127"/>
+            </g>
+            <g class="chair">
+                <ellipse cx="78.662" cy="22.219" rx="3.1" ry="3.455"/>
+                <path class="path" d="m 78.662019,25.674289 0.803727,7.134119 10e-7,60.520672 41.184733,0.474127"/>
+            </g>
+            <g class="chair">
+                <ellipse cx="78.662" cy="12.597" rx="3.1" ry="3.455"/>
+                <path class="path" d="m 81.761821,12.597002 h 3.595765 v 18.401012 l -5.89184,1.810394 10e-7,60.520672 41.184733,0.474127"/>
+            </g>
+            <g class="chair">
+                <ellipse cx="96.261" cy="145.73" rx="3.1" ry="3.455"/>
+                <path class="path" d="m 93.160727,145.73024 -13.694981,-26.70685 10e-7,-25.69431 41.184733,0.474127"/>
+            </g>
+            <g class="bed"  onclick="clickObj(event)" title="Двуспальная кровать в гостиной">
+                <path class="path" d="m 54.899264,69.866516 3.947411,10e-7 -0.59664,-37.058109 h 21.215711 l 10e-7,60.520672 41.184733,0.474127"/>
+                <path class="path" d="m 30.619126,69.866516 -2.774935,0 0.01109,-37.058108 h 51.610468 v 60.567783 l 41.184734,0.427016"/>
+    
+                <path d="M30.869 48.453h23.78v30.295h-23.78z" style="stroke:#000;stroke-width:.5;"/>
+                <rect width="7.489" height="3.562" x="34.313" y="73.724" ry="1.644" style="fill:none;fill-opacity:1;stroke:#000;stroke-width:.451003;stroke-dasharray:none;stroke-opacity:1"/>
+                <rect width="7.489" height="3.562" x="44.646" y="73.724" ry="1.644" style="fill:none;fill-opacity:1;stroke:#000;stroke-width:.451003;stroke-dasharray:none;stroke-opacity:1"/>
+            </g>
+            <g class="bed" onclick="clickObj(event)" title="Большая кровать в спальне">
+                <path class="path" d="m 93.246683,115.59676 -13.780937,-0.0119 0,-22.208669 41.184734,0.427016"/>
+
+                <path d="M93.247 105.825h20.29v29.319h-20.29z" style="stroke:#000;stroke-width:.5;"/>
+                <rect width="7.489" height="3.562" x="99.647" y="108.817" ry="1.644" style="fill:none;fill-opacity:1;stroke:#000;stroke-width:.451003;stroke-dasharray:none;stroke-opacity:1"/>
+            </g>
+        </svg>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

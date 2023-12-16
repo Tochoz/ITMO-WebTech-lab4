@@ -1,0 +1,73 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    margin: 20px auto;
+    width: fit-content;
+}
+
+#tooltip{
+    margin-left: 2em;
+    padding: .5em 2em .7em 2em;
+    position: absolute;
+    display:none;
+    font-weight: 600;
+    
+    background-color: #b2b7ffc4;
+    border: black solid 3px;
+    border-radius: .5em;
+}
+
+h1{
+    text-align: center;
+    font-size: 200%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.chair{
+    fill:#ec8383;
+    fill-opacity:1;
+    stroke:#000;stroke-width:.451003;
+    stroke-opacity:1;
+}
+.chair:hover>ellipse{
+    
+    fill:#f06262;
+}
+.table{
+    fill:#afecc0;
+    fill-opacity:1;stroke:#000;
+    stroke-width:.51519;
+    stroke-opacity:1;
+    transition: .2s ease-in-out;
+
+}
+.table:hover{
+    fill:#61db84;
+    
+}
+
+.path{
+    pointer-events: none;
+    fill:none;
+    fill-opacity:1;
+    stroke:#ae0000;
+    stroke-width:0.951004;
+
+    transition: .2s ease-in-out;
+    stroke-opacity:0;
+}
+
+.bed{
+    fill:#ece4af;
+}
+.bed:hover{
+    fill:#ffe856;
+}
+
+.bed:hover>.path,.chair:hover>.path{
+    
+    stroke-opacity:1;
+}
