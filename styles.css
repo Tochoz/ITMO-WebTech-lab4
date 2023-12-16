@@ -7,13 +7,14 @@ body{
 }
 
 #tooltip{
+    display:none;
     pointer-events: none;
     margin-left: 2em;
     padding: .5em 2em .7em 2em;
     position: absolute;
-    display:none;
-    font-weight: 600;
     
+    font-weight: 600;
+    transition: .5s;
     background-color: #b2b7ffc4;
     border: black solid 3px;
     border-radius: .5em;
